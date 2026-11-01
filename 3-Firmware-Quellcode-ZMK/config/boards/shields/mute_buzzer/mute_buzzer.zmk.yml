@@ -1,0 +1,8 @@
+file_format: "1"
+id: mute_buzzer
+name: Mute-Buzzer
+type: shield
+url: https://zmk.dev
+requires: [pro_micro]
+features:
+  - keys

@@ -1,0 +1,35 @@
+/*
+ * Kurz druecken      -> Strg+Shift+9  (Browser-Erweiterung mutet/entmutet)
+ * 5 Sek. gedrueckt   -> Bluetooth-Kopplung loeschen (zum Umkoppeln auf einen anderen PC)
+ */
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+/ {
+    macros {
+        bt_unpair: bt_unpair {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_CLR>;
+        };
+    };
+
+    behaviors {
+        mute_or_unpair: mute_or_unpair {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <5000>;
+            bindings = <&bt_unpair>, <&kp>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <&mute_or_unpair 0 LC(LS(N9))>;
+        };
+    };
+};

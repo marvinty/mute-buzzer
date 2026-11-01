@@ -1,0 +1,21 @@
+# Eigene Whitelist-Einträge
+whitelist.local.js
+
+# Altlast
+Mute-Buzzer.zip
+
+# Lokaler ZMK-Build
+zmkbuild/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Claude Code, lokale Einstellungen
+.claude/settings.local.json
+
+# Betriebssystem
+Thumbs.db
+Desktop.ini
+.DS_Store

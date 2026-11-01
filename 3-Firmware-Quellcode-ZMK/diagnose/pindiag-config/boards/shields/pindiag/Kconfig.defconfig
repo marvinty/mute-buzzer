@@ -1,0 +1,4 @@
+if SHIELD_PINDIAG
+config ZMK_KEYBOARD_NAME
+    default "Pin-Diagnose"
+endif

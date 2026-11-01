@@ -1,0 +1,6 @@
+---
+include:
+  - board: nice_nano_v2
+    shield: mute_buzzer
+  - board: nice_nano_v2
+    shield: settings_reset

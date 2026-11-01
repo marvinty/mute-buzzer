@@ -1,0 +1,5 @@
+# Generierte Dateien und Firmware nie an den Zeilenenden verändern
+*.uf2 binary
+*.stl binary
+*.step binary
+*.png binary

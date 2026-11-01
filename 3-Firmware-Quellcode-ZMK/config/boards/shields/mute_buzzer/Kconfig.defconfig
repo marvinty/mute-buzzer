@@ -1,0 +1,7 @@
+if SHIELD_MUTE_BUZZER
+
+# Bluetooth-Name, max. 16 Zeichen
+config ZMK_KEYBOARD_NAME
+    default "Mute-Buzzer"
+
+endif
