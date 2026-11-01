@@ -23,3 +23,8 @@ sie auch: per Klick aufs Icon oder mit `Strg+Shift+9`.
 ## Stand
 
 Elektronik, Firmware und Erweiterung sind fertig. Das Gehäuse ist modelliert, aber noch nicht gedruckt und nicht anprobiert.
+
+## Lizenz
+
+[MIT](LICENSE), das gilt für den ganzen Inhalt dieses Repos, auch die Gehäusedateien. Die fertigen `.uf2` in `1-Firmware/`
+enthalten zusätzlich ZMK und Zephyr, für diese Teile gelten deren eigene Lizenzen.
